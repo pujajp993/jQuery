@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+</head>
+<body>
+    <div style="background-color: red;">Hi</div><br>
+    <div id="div1">Hi</div><br>
+    <button id="btn1">Text</button>
+    <button id="btn2">Html</button>
+    <button id="btn3">Val</button>
+    <button id="btn4">Attr</button>
+    <button id="btn5">Attr1</button><br><br>
+    <input type="text">
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("div").text("welcome");
+            });
+            $("#btn2").click(function(){
+                $("div").html("<h1>Welcocome</h1>");
+            });
+            $("#btn3").click(function(){
+                $("input").val("Ammu");
+            });
+            $("#btn4").click(function(){
+                $("div").attr("style","background-color:yellow;height:100px;width:100px");
+                // 2 hi case same div
+            });
+            $("#btn5").click(function(){
+                $("#div1").attr("style","background-color:yellow;height:200px;width:200px");
+                // only last div work
+            });
+        });
+    </script>
+    
+</body>
+</html>
