@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+    <style>
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn1">Click</button>
+    <button id="btn2">Stop</button>
+    <div></div>
+    <!-- $(selector).animation({prams},speed,callback); -->
+
+    <script>
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //      //   $("div").animate({left:"250px",opacity:"0.5",height:"150px",width:"150px"},3000);
+
+        //         $("div").animate({left:"250px",height:"+=150px",width:"+=150px"});
+
+
+        //     });
+        // });
+
+
+
+
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //     // $("div").animate({height:"hide"});
+        //     // $("div").animate({height:"show"});
+        //     $("div").animate({height:"toggle"});
+        //     });
+        // });
+
+
+        // queue functionality
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+            var div=$("div");
+            div.animate({height:"300px",opacity:"0.4"},3000);
+            div.animate({width:"300px",opacity:"0.8"},2000);
+            div.animate({height:"100px",opacity:"0.5"},2000);
+            div.animate({width:"100px",opacity:"0.8"},2000);
+        });
+
+        $("#btn2").click(function(){
+            $("div").stop();
+        });
+    });
+
+    //stop syntax
+    // $(selector).stop()
+
+
+
+
+    </script>
+    
+</body>
+</html>
