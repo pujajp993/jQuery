@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="one.js"></script> -->
+     <!-- first case internet connection illathe nanukku jquerry work cheyyikkam.
+        that means athu oru file il one.js enna file content jqueet.com il ninnu copy cheythu file ittu.
+        so net illathe work -->
+    
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+<!-- second case link aanu.so net connection venam jquerry cdn il ninnum link copy cheythu file paste 
+    cheyyukayayirunnu. src il.so net connection necessory work working jquerry librart -->
+
+</head>
+<body>
+
+    <script src="one.js"></script> <!--link evide venelum kodukkam better in head section -->
+    
+    <!-- syntax -->
+    <!-- $(selector).action() -->
+    <!-- <script>
+        $(document).ready(function(){
+            $(selector).action();
+        });
+    </script> -->
+
+
+
+    <p class="new">This is paragraph</p>
+    <p id="p1">This is paragraph</p>
+    <p>This is paragraph</p>
+    <h1 class="new">This is heading</h1>
+
+    <script>
+        // element selector
+        // $(document).ready(function(){
+        //     $("p").css("background-color","red");
+        // });
+
+        //id Selector
+        // $(document).ready(function(){
+        //         $("#p1").css("color","green");
+        // });
+
+        //class selector
+        // $(document).ready(function(){
+        //         $(".new").css("background-color","yellow");
+        // });
+
+
+        //group selector
+            // $(document).ready(function(){
+            //     $(".new,#p1").css("color","blue");
+            // });
+
+        // universal selector
+
+        $(document).ready(function(){
+            $("*").css("color","yellow");
+        });
+
+        // attribute selector,sudo class ellam same pole pattum
+
+    </script>
+</body>
+</html>

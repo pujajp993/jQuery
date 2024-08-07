@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+</head>
+<body>
+    <h1>Welcome h1</h1>
+    <p class="p1">Paragraph with class p1</p>
+    <p>paragraph</p>
+    <h2>This is H2</h2>
+     <span>Span element1</span> <!--span neans inline element -->
+    <span>Span element2</span>
+    
+    <script>
+
+        $(document).ready(function(){
+            $("h1").add(".p1").add("span").css('background-color',"yellow");
+        });
+    </script>
+</body>
+</html>

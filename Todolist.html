@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todocss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div id="divid" >
+        <h2>My To Do List</h2>
+    </div>
+
+      <div>
+        <input type="text" id="todo-input" placeholder="Add the todo list elements.....">
+        <button id="todo-btn">Add</button>
+        <ul id="todo-list"></ul>
+      </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("#todo-btn").click(function(){
+                var task=$("#todo-input").val();
+                if(task!=""){
+                    $("#todo-list").append("<li id='llid'>"+task+ "<span class='delete'>" +"X"+ "</span>"+"</li>");
+                    $("#todo-input").val("");
+                  }  
+            })
+            $(document).on('click','.delete',function(){
+            $(this).parent().remove();
+        });
+        });
+    </script>
+    
+</body>
+</html>

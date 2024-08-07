@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+    <style>
+        .class1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <p class="p1">Para1</p>
+    <p>para2</p>
+    <button>Click</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,.p1").toggleClass('class1');
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+</head>
+<body>
+    <!-- <div style="background-color: red;height: 100px;width: 100px;">
+    <p>Para1</p>
+    <p>Para2</p>
+    </div>
+    <button id="btn1">Remove</button>
+    <button id="btn2">Empty</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("div").remove();
+            });
+            $("#btn2").click(function(){
+                $("div").empty();
+            });
+        });
+    </script> -->
+
+
+    <div style="background-color: red;height: 100px;width: 100px;">
+        <p class="p1">Para1</p>
+        <p>Para2</p>
+        </div>
+        <button id="btn1">Remove</button>
+        <button id="btn2">Empty</button>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("p").remove(".p1");
+                });
+                $("#btn2").click(function(){
+                    $("div").empty();
+                });
+            });
+        </script>
+</body>
+</html>

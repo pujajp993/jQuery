@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+</head>
+<body>
+    <button id="btn1">Click</button>
+    <p>this is a paragraph</p>
+    <script>
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //         $("p").hide(3000);
+        //         alert("hello");
+        //     });
+        // });
+
+
+        //callback
+        // $(document).ready(function(){
+        //     $("#btn1").click(function(){
+        //        $("p").hide(3000,function(){
+        //         alert("hello");
+        //        });
+        //     });
+        // });
+
+        //chaining
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $("p").css("color","red")
+                .slideUp(2000)
+                .slideDown(300)
+                .hide(2000)
+                .show(10000)
+
+                
+            });
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+    <style>
+        #div1{
+            height: 100px;
+            width: 300px;
+            padding:10px 20px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <button>Click</button>
+
+    <script>
+        //width and height
+        $(document).ready(function(){
+            $("button").click(function(){
+                // var txt="";
+                // txt=txt+"width of div: "+$("#div1").width()+"</br>";
+                // txt=txt+"height of div: "+$("#div1").height()+"</br>";
+                // txt=txt+"innerwidth of div: "+$("#div1").innerWidth()+"</br>"; //300+20+20=340
+                // txt=txt+"innerheight of div: "+$("#div1").innerHeight()+"</br>";//100+10+10
+                // txt=txt+"outerwidth of div: "+$("#div1").outerWidth(true)+"</br>";
+                // txt=txt+"outerheight of div: "+$("#div1").outerHeight(true)+"</br>";
+                // txt=txt+"outerwidth of div:returns the width of an element (includes padding and border). "+$("#div1").outerWidth()+"</br>";
+                // txt=txt+"outerheight of div:returns the height of an element (includes padding and border). "+$("#div1").outerHeight();
+                // $("#div1").html(txt);
+
+                // when click width and height change to 500
+                $("#div1").width(500).height(500);
+
+
+
+            });
+        });
+    </script>
+</body>
+</html>

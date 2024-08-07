@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+    <style>
+        .one *{
+            display: block;
+            border: 5px solid blueviolet;
+            color: gray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("span").parents().css({"color":"red"});
+        });
+    </script>
+</head>
+<body class="one">Greate Great grandparent
+    <div style="width: 500px;">Greate Grandparent(div)
+    <ul>Grandparent
+        <li>Direct Parent
+            <span>Span</span>
+        </li>
+    </ul>
+    </div>
+    
+</body>
+</html>

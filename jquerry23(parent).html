@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("p").parent().css({"background-color":"red","boarder":"2px solid red"})
+        })
+    </script>
+</head>
+<body>
+    <button>Click</button>
+    <div style="border: 2px solid gray;">One
+        <div style="border: 2px solid gray;">Two
+            <div style="border: 2px solid gray;">Three
+                <p>This is a paragrah</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+    <style>
+        .class1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="class1">Heading1</h1>
+    <h2 class="class1">Heading2</h2>
+    <h3 class="class1">Heading3</h3>
+    <button>Click</button>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('h1,h2').removeClass('class1')
+            })
+        })
+    </script>
+</body>
+</html>

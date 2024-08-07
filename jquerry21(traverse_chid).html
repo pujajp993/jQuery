@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .one *{
+            display: block;
+            border: 2px solid black;
+            color: red;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+     <script src="one.js"></script>
+     <script>
+         $(document).ready(function(){
+             $("ul").children().css({"color":"blue","border":"2px solid red"});
+         });
+     </script> -->
+     <style>
+      .one *{
+          display: block;
+          border: 2px solid black;
+          color: red;
+          padding: 5px;
+          margin: 15px;
+      }
+  </style>
+   <script src="one.js"></script>
+   <script>
+       $(document).ready(function(){
+           $("span").closest("ul").css({"color":"blue","border":"2px solid blue"});
+       });
+   </script>
+
+</head>
+<!-- <body class="one"> Body(great-grandparent)
+    <div style="width: 500px;"> Div(Grandparent)
+    <ul>ul (Direct Parent)
+        <l1>li(child)
+            <span>span(grandchild)
+            </span>
+        </l1>
+    </ul>
+    </div>
+    
+    
+</body> -->
+
+
+
+<body class="one">Body(great-grear grandparent)
+  <div style="width: 500px;">Div(great grandparent)
+  <ul>Ul(second ancestor-second grandparent)
+    <ul>first ancesor-first grandparent
+      <li>Direct
+          <span>Span</span>
+      </li>
+    </ul>
+  </ul>
+  </div>
+</body>
+</html>
+

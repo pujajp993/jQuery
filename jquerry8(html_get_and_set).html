@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="one.js"></script>
+</head>
+<body>
+    
+    <!-- Get text(),html(),val(),attr() -->
+
+    <!-- <div style="background-color: red;">
+    <h1>Hello</h1>
+    <h2>hai</h2>
+    <p>Para</p>
+    </div>
+    <button id="btn1">Text</button>
+    <button id="btn2">HTML</button>
+
+    <script>
+        $(document).ready(function(){
+            //text()
+            $("#btn1").click(function(){
+                alert("text from div"+$("div").text());
+            });
+            //html()
+            $("#btn2").click(function(){
+                alert("html from div"+$("div").html());
+            });
+        });
+    </script> -->
+
+
+
+
+    <form action="">
+        <input type="text" name="uname">
+    </form>
+    <button>Click</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("value from input:"+$("input").val());
+            })
+        }) 
+    </script>
+<!-- 
+    <div style="background-color: red; width: 100px; height: 100px;"></div>
+    <button>Click</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                alert("value from div:"+$("div").attr("style"));
+            });
+        }); -->
+    </script>
+</body>
+</html>
