@@ -1,0 +1,67 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>outerWidth demo</title>
+  <style>
+  div {
+    width: 60px;
+    padding: 10px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    background: red;
+    cursor: pointer;
+  }
+  .mod {
+    background: blue;
+    cursor: default;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+ 
+<div>d</div>
+<div>d</div>
+<div>d</div>
+<div>d</div>
+<div>d</div>
+ 
+<script>
+var modWidth = 60;
+$( "div" ).one( "click", function() {
+  $( this ).outerWidth( modWidth ).addClass( "mod" );
+  modWidth -= 8;
+});
+</script>
+ 
+</body>
+</html> -->
+
+
+
+<!-- The following example returns the width and height of the document (the HTML document) and window (the browser viewport): -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    var txt = "";
+    txt += "Document width/height: " + $(document).width();
+    txt += "x" + $(document).height() + "\n";
+    txt += "Window width/height: " + $(window).width();
+    txt += "x" + $(window).height();
+    alert(txt);
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Display dimensions of document and window</button>
+
+</body>
+</html>
