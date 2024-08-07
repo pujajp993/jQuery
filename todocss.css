@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+#divid{
+    color: red;
+    background-color: yellow;
+    height: 100px;
+}
+h2{
+    font-size: 2pc;
+    width: 300px;
+    height: 50px;
+    margin-left: 500px;
+    padding: 30px;
+    
+}
+
+#todo-input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 80px;
+    box-sizing: border-box; 
+    
+}
+
+#todo-btn{
+    width:10%;
+    height: 45px;
+    padding: 12px 20px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#todo-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#todo-btn:hover{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#todo-list{
+    margin-left: 50px;
+    font-size: 24px;
+}
+#llid{
+    height: 50px;
+}
+#llid:hover{
+
+    background-color: beige;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    
+
+}
+.delete{
+    
+    color: red;
+    position: fixed;
+    left: 500px;
+    font-size: 24px;
+}
+
+.delete:hover{
+    transform: translateY(4px);
+}
